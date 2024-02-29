@@ -1,0 +1,93 @@
+/* Home.css */
+
+/* Styles for the entire Home component */
+.home-container {
+    padding: 20px; /* Add some padding around the content */
+    max-width: 1200px; /* Max width for the content */
+    margin: auto; /* Center the content */
+    display: grid; /* Use CSS Grid for layout */
+    grid-template-columns: repeat(3, 1fr); /* Create 3 columns of equal width */
+    gap: 20px; 
+    
+   
+  }
+
+ 
+  .flag-image2 {
+    margin-right: 0.5cm; 
+    width: 30px; /* Small size */
+    height: 30px; /* Small size */
+    border-radius: 50%; /* Make it round */
+    border: 1px solid #ddd; /* Optional: light gray border */
+    object-fit: cover; 
+}
+.logo{
+  margin-right: 2cm; 
+  margin-left: 1cm; 
+    width: 60px; /* Small size */
+    height: 60px; /* Small size */
+    border-radius: 50%; /* Make it round */
+    border: 1px solid #ddd; /* Optional: light gray border */
+    object-fit: cover; 
+}
+
+.flag-image3 {
+  border: #030000;
+  margin-right: 0.5cm; 
+  width: 45px; /* Small size */
+  height: 35px; /* Small size */
+  border-radius: 50%; /* Make it round */
+  border: 1px solid #ddd; /* Optional: light gray border */
+  object-fit: cover; 
+}
+  
+  
+  /* Styles for each product card */
+  .product-card {
+    border: 1px solid #ddd; /* Add a border to each card */
+    border-radius: 8px; /* Round the corners of the card */
+    overflow: hidden; /* Ensure content doesn't overflow the card's boundary */
+    padding: 15px; /* Add some padding inside the card */
+    display: flex; /* Use flexbox for the card layout */
+    flex-direction: column; /* Stack items vertically inside the card */
+    align-items: center; /* Center items horizontally */
+    border-color: black;
+    border-style: double;
+  }
+  .orderbtn{
+    background-color: rgb(76, 202, 240);
+    text-size-adjust: 10;
+    color: #030000;
+    margin-left: 0cqb;
+    border-radius: 10px;
+    height: 1cm;
+    width: 4cm;
+
+  }
+
+  .flag-icon {
+    width: 30px; /* Small size */
+    height: 30px; /* Small size */
+    border-radius: 50%; /* Make it round */
+    border: 1px solid #ddd; /* Optional: light gray border */
+    object-fit: cover; /* Ensure the flag images cover the circle area without being distorted */
+  }
+  
+  
+  .product-image {
+    width: 100%; /* Make the image take the full width of the card */
+    height: 350px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image covers the area */
+    margin-bottom: 15px; /* Add some space between the image and the text */
+  }
+  
+  .product-info {
+    text-align: center; /* Center the text inside the product info */
+  }
+  
+  .product-info h5, .product-info p {
+    margin: 5px 0; /* Add some margin to the text */
+  }
+.box{
+    background-color: black;
+}  

@@ -15,8 +15,8 @@ import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import LiveTvIcon from '@mui/icons-material/LiveTv';
 import PetsIcon from '@mui/icons-material/Pets';
 import { List, ListItem, ListItemIcon, ListItemText } from '@mui/material';
-import CreditCardIcon from '@mui/icons-material/CreditCard'; // For generic card payments
-import AccountBalanceIcon from '@mui/icons-material/AccountBalance'; // For bank transfers
+import CreditCardIcon from '@mui/icons-material/CreditCard'; 
+import AccountBalanceIcon from '@mui/icons-material/AccountBalance'; 
 import PaypalIcon from '@mui/icons-material/Payments';
 import Avatar from '@mui/material/Avatar';
 
@@ -47,9 +47,9 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Home() {
   const paymentMethods = [
-    { name: 'Credit Card', Icon: CreditCardIcon, color: '#1565c0' }, // Blue color for Credit Card
-    { name: 'Bank Transfer', Icon: AccountBalanceIcon, color: '#2e7d32' }, // Green color for Bank Transfer
-    { name: 'PayPal', Icon: PaypalIcon, color: '#00457c' }, // PayPal's brand color
+    { name: 'Credit Card', Icon: CreditCardIcon, color: '#1565c0' }, 
+    { name: 'Bank Transfer', Icon: AccountBalanceIcon, color: '#2e7d32' }, 
+    { name: 'PayPal', Icon: PaypalIcon, color: '#00457c' }, 
   ];
   const [products, setProducts] = useState([]);
   const [isLoading, setIsLoading] = useState(true);
@@ -111,7 +111,7 @@ function Home() {
           <Item ><h3>Customer Care</h3><hr/>
                 <div style={{textAlign:'left'}}>
                 <ol>
-               <Link><li>Help Center</li></Link> 
+               <Link ><li>Help Center</li></Link> 
                <Link><li>How to Buy</li></Link> 
                 <Link><li>Bulk Purchasing</li></Link>
                 <Link><li>Returns & Refunds</li></Link>

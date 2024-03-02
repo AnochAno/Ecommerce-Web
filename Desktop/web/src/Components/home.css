@@ -12,7 +12,16 @@
    
   }
 
- 
+  @media (max-width: 768px) {
+    .MuiCardContent-root {
+      padding: 16px !important;
+    }
+    .MuiTypography-root {
+      font-size: 14px !important;
+    }
+    /* Add more styles as needed */
+  }
+  
   .flag-image2 {
     margin-right: 0.5cm; 
     width: 30px; /* Small size */

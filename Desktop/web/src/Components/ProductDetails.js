@@ -54,15 +54,14 @@ function ProductDetails() {
   return (
     <Container>
       <br /><br />
-      <Grid container spacing={4}>
-        {/* Product Details */}
-        {product && (
-          <Grid item xs={12} md={4}>
+      <Grid container spacing={4} justifyContent="center">
+        <Grid item xs={12} md={4}>
+          {product && (
             <Card>
               <CardContent>
                 <Typography variant="h5" component="h2" style={{ textAlign: 'center' }}>{product.title}</Typography>
-                <img src={product.image} alt={product.title} style={{ maxWidth: '30%', marginTop: '10px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
-                <Typography variant="body2" component="p" color="textSecondary" style={{ textAlign: 'left', maxHeight:'10%'}}>{product.description}</Typography>
+                <img src={product.image} alt={product.title} style={{ maxWidth: '50%', marginTop: '10px', display: 'block', marginLeft: 'auto', marginRight: 'auto' }} />
+                <Typography variant="body2" component="p" color="textSecondary" style={{ textAlign: 'left' }}>{product.description}</Typography>
                 <Typography variant="h5" style={{ textAlign: 'center' }}>Price: ${product.price}</Typography>
                 <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', marginTop: '10px' }}>
                   <IconButton onClick={decrementQuantity}><RemoveIcon /></IconButton>
@@ -74,22 +73,21 @@ function ProductDetails() {
                 </Box>
               </CardContent>
             </Card>
-          </Grid>
-        )}
-      {/* Billing Information Box */}
-      {product && (
-          <Grid item xs={12} md={4}>
+          )}
+        </Grid>
+
+        <Grid item xs={12} md={4}>
+          {product && (
             <Paper elevation={3} sx={{ p: 2 }}>
               <Typography variant="h6">Billing Information:</Typography>
               <Typography>Product: {product.title}</Typography>
               <Typography>Quantity: {quantity}</Typography>
               <Typography>Total Price: ${totalPrice}</Typography>
-
-              <img src={money} alt="our Flag" style={{width:'300px', height:'290px'}}/>
+              <img src={money} alt="our Flag" style={{ width: '100%', height: 'auto' }} />
             </Paper>
-          </Grid>
-        )}
-        {/* Payment Form */}
+          )}
+        </Grid>
+
         <Grid item xs={12} md={4}>
           <Card>
             <CardContent>
@@ -159,8 +157,6 @@ function ProductDetails() {
             </CardContent>
           </Card>
         </Grid>
-
-        
       </Grid>
     </Container>
   );

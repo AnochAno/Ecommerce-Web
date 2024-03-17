@@ -11,6 +11,7 @@ import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import logo from './Components/img/logo.jpg';
 import Helpcenter from './Components/helpcenter';
+import Parners from './parners'
 
 
 function App() {
@@ -31,7 +32,7 @@ function App() {
 
     <Stack direction="row" spacing={2} alignItems="center">
       <Button color="inherit" component={Link} to="/">Home</Button>
-      <Button color="inherit" component={Link} to="/Login">Promotions</Button>
+      <Button color="inherit" component={Link} to="/Lp"> Logistics Partner</Button>
       <Button color="inherit" /*component={Link} to="/Home"*/>Returns</Button>
       <Button color="inherit" /*component={Link} to="/Home"*/>Rates</Button>
       <Button color="inherit" /*component={Link} to="/Home"*/>About</Button>
@@ -77,6 +78,7 @@ function App() {
           <Route path='/' element={<Home />} />
           <Route path='/HelpCenter' element={<Helpcenter/>}/>
           <Route path='/Login' element={<Login />} />
+          <Route path="/Lp" element= {<Parners/>}/>
           <Route path="/product/:id" element={<ProductDetails />} />
           
           

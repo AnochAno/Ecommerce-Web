@@ -310,7 +310,7 @@ const helpcenter = () => {
           Chat with us
         </Typography>
         <Typography variant="body2" color="text.secondary">
-        Still looking for answers? Ask Daz anytime, day or night, just click on "Chat Now" below. 
+        Still looking for answers? Ask anytime, day or night, just click on "Chat Now" below. 
         Or speak to us via live chat 8AM to 11PM 7days a week
         </Typography>
       </CardContent>
@@ -321,7 +321,28 @@ const helpcenter = () => {
     </Card></Item>
         </Grid>
         <Grid item xs={6}>
-          <Item>xs=4</Item>
+          <Item>
+           <h2 style={{textAlign:'center' , color:'ActiveCaption'}}>Earn With Smart Collection</h2>
+           <Card sx={{ maxWidth: 550 }}>
+      <CardContent style={{textAlign:'left'}}>
+        <h3 style={{textAlign:'center' , color:'ActiveCaption'}}>if You want jonit these program You can Contact with our Whatsapp</h3>
+        <Typography  >
+        Our University
+        </Typography>
+        <Typography >
+        Sell with us
+        </Typography>
+        <Typography >
+        Code of Conduct
+        </Typography>
+        <Typography >
+        Join the Daraz Affiliate Program
+        </Typography>
+       
+      </CardContent>
+    </Card>
+
+            </Item>
         </Grid>
       </Grid>
     </Box>

@@ -10,6 +10,7 @@ import InputAdornment from '@mui/material/InputAdornment';
 import IconButton from '@mui/material/IconButton';
 import SearchIcon from '@mui/icons-material/Search';
 import logo from './Components/img/logo.jpg';
+import Helpcenter from './Components/helpcenter';
 
 
 function App() {
@@ -30,7 +31,7 @@ function App() {
 
     <Stack direction="row" spacing={2} alignItems="center">
       <Button color="inherit" component={Link} to="/">Home</Button>
-      <Button color="inherit" /*component={Link} to="/Home"*/>Promotions</Button>
+      <Button color="inherit" component={Link} to="/Login">Promotions</Button>
       <Button color="inherit" /*component={Link} to="/Home"*/>Returns</Button>
       <Button color="inherit" /*component={Link} to="/Home"*/>Rates</Button>
       <Button color="inherit" /*component={Link} to="/Home"*/>About</Button>
@@ -74,6 +75,7 @@ function App() {
       <div style={{ paddingTop: 60 }}>
         <Routes>
           <Route path='/' element={<Home />} />
+          <Route path='/HelpCenter' element={<Helpcenter/>}/>
           <Route path='/Login' element={<Login />} />
           <Route path="/product/:id" element={<ProductDetails />} />
           

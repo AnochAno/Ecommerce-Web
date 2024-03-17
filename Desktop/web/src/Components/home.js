@@ -111,7 +111,7 @@ function Home() {
           <Item ><h3>Customer Care</h3><hr/>
                 <div style={{textAlign:'left'}}>
                 <ol>
-               <Link ><li>Help Center</li></Link> 
+               <Link to={"/HelpCenter"}><li>Help Center</li></Link> 
                <Link><li>How to Buy</li></Link> 
                 <Link><li>Bulk Purchasing</li></Link>
                 <Link><li>Returns & Refunds</li></Link>

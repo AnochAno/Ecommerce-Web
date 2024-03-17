@@ -12,6 +12,7 @@ import SearchIcon from '@mui/icons-material/Search';
 import logo from './Components/img/logo.jpg';
 import Helpcenter from './Components/helpcenter';
 import Parners from './parners'
+import { DisabledByDefault } from '@mui/icons-material';
 
 
 function App() {
@@ -33,9 +34,9 @@ function App() {
     <Stack direction="row" spacing={2} alignItems="center">
       <Button color="inherit" component={Link} to="/">Home</Button>
       <Button color="inherit" component={Link} to="/Lp"> Logistics Partner</Button>
-      <Button color="inherit" /*component={Link} to="/Home"*/>Returns</Button>
-      <Button color="inherit" /*component={Link} to="/Home"*/>Rates</Button>
-      <Button color="inherit" /*component={Link} to="/Home"*/>About</Button>
+      <Button color="inherit" disabled>Returns</Button>
+      <Button color="inherit" disabled>Rates</Button>
+      <Button color="inherit" disabled>About</Button>
       
      
 

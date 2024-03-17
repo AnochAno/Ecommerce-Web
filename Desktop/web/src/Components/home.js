@@ -23,13 +23,13 @@ import Avatar from '@mui/material/Avatar';
 
 
 
-import flagTamil from './img/ltte.png';
+
 import flag1 from './img/india.png';
 import flag3 from './img/sl.jpg';
 import flag4 from './img/london.jpg';
 import flag5 from './img/france.jpg';
 import flag6 from './img/qtr.png';
-import fb from './img/Fb.jpg';
+
 import twi from './img/Twi.png';
 import lin from './img/lnk.png';
 import mail from './img/em.png';
@@ -112,10 +112,10 @@ function Home() {
                 <div style={{textAlign:'left'}}>
                 <ol>
                <Link to={"/HelpCenter"}><li>Help Center</li></Link> 
-               <Link><li>How to Buy</li></Link> 
-                <Link><li>Bulk Purchasing</li></Link>
-                <Link><li>Returns & Refunds</li></Link>
-                <Link><li>Corporate</li></Link>
+               <Link disabled><li>How to Buy</li></Link> 
+                <Link disabled><li>Bulk Purchasing</li></Link>
+                <Link disabled><li>Returns & Refunds</li></Link>
+                <Link disabled><li>Corporate</li></Link>
                 </ol>
                 </div>
           
@@ -124,7 +124,6 @@ function Home() {
         <Grid item xs={6}>
           
           <Item><h3>Our International</h3><hr/><br/>
-          <img src={flagTamil} alt="our Flag" className="flag-icon" />
           <img src={flag1} alt="in Flag" className="flag-icon" />
           <img src={flag3} alt="sl Flag" className="flag-icon" />
           <img src={flag4} alt="london Flag" className="flag-icon" />
@@ -189,7 +188,6 @@ function Home() {
   <Grid item xs={12}>
     <Item><h1>Follow Us</h1>
     <div>
-    <img src={fb} alt="our Flag" class="flag-image3" />
     <img src={twi} alt="in Flag" class="flag-image2" />
     <img src={lin} alt="sl Flag" class="flag-image2" />
     <img src={mail} alt="london Flag" class="flag-image2" />
